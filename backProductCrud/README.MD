@@ -1,16 +1,17 @@
 # API de Productos
 
-## POST (Agregar un producto) - localhost:8080/api/product
+### POST (Agregar un producto) - localhost:8080/api/product
 
-**Requiere:** Todos los campos son obligatorios. Si no se proporcionan, devuelve un error.
-
-```json
+**Requiered:** Todos los campos son obligatorios. Si no se proporcionan, devuelve un error.
+```
 {
     "title": "Mate",
     "price": "200",
     "file": "(Aquí va la imagen)"
 }
-response: 
+```
+**Response:**
+```
 {
     "data": {
         "status": "success",
@@ -27,11 +28,15 @@ response:
         ]
     }
 }
+```
 
-*** Get (Obtener todos los productos) - localhost:8080/api/product
+### Get (Obtener todos los productos) - localhost:8080/api/product
+
+**Response:** Mostrar productos con status true.
+```
 {
     "data": {
-        "status": "success",                     // La idea es mostrar los productos si su status es true.
+        "status": "success",
         "result": [
             {
                 "_id": "6592e1539011a1d67c585e75",
@@ -45,8 +50,13 @@ response:
         ]
     }
 }
+```
 
-*** Get (Obtener productos por su Id) - localhost:8080/api/product/6592e1539011a1d67c585e75
+### Get (Obtener productos por su Id) - localhost:8080/api/product/6592e1539011a1d67c585e75
+
+**Requiered:** Requiere un Id por parametro.
+**Response:** 
+```
 {
     "data": {
         "status": "success",
@@ -61,15 +71,20 @@ response:
         }
     }
 }
+```
 
-*** PUT (Modificar cualquier campo incluso files) - localhost:8080/api/product/6592e1539011a1d67c585e75
-Required: (No es nceesario todos los campos, pero debe de llegar con este name el que si va a ser modificado)
+### PUT (Modificar cualquier campo incluso files) - localhost:8080/api/product/6592e1539011a1d67c585e75
+
+**Required:** (No es nceesario todos los campos, pero debe de llegar con este name el que si va a ser modificado)
+```
 {
     title: 'Mate'
     price: '200'
     file: (Acá va la img)
 }
-Response:
+```
+**Response:**
+```
 {
     "data": {
         "status": "success",
@@ -84,9 +99,13 @@ Response:
         }
     }
 }
+```
 
-*** DELETE (Elimina un producto) - localhost:8080/api/product/6592e1539011a1d67c585e75
-Esto en realidad no elimina el producto cambia el status a false.
+## DELETE (Elimina un producto) - localhost:8080/api/product/6592e1539011a1d67c585e75
+
+**Requiered:** Requiere un Id por parametro.
+**Response:** Esto en realidad no elimina el producto cambia el status a false.
+```
 {
     "data": {
         "status": "success",
@@ -101,3 +120,4 @@ Esto en realidad no elimina el producto cambia el status a false.
         }
     }
 }
+```
