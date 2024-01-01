@@ -55,6 +55,7 @@
 ### Get (Obtener productos por su Id) - localhost:8080/api/product/6592e1539011a1d67c585e75
 
 **Requiered:** Requiere un Id por parametro.
+
 **Response:** 
 ```
 {
@@ -104,6 +105,7 @@
 ## DELETE (Elimina un producto) - localhost:8080/api/product/6592e1539011a1d67c585e75
 
 **Requiered:** Requiere un Id por parametro.
+
 **Response:** Esto en realidad no elimina el producto cambia el status a false.
 ```
 {
