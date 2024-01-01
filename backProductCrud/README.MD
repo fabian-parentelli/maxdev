@@ -1,12 +1,14 @@
-EL name del campo que trae las imagenes es "file".
+# API de Productos
 
-*** POST (Para agregar un producto) - localhost:8080/api/product
+## POST (Agregar un producto) - localhost:8080/api/product
 
-Required: se requieren todos los campos, si no devuelve un error.
+**Requiere:** Todos los campos son obligatorios. Si no se proporcionan, devuelve un error.
+
+```json
 {
-    title: 'Mate'
-    price: '200'
-    file: (Acá va la img)
+    "title": "Mate",
+    "price": "200",
+    "file": "(Aquí va la imagen)"
 }
 response: 
 {
