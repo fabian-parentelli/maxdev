@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
             <div className='maxdev'>
                 <a href='#'>Pagina desarrollafa por <strong>Maxdev</strong></a>
-                <img className='logoMaxdev' src="src/assets/logo.png" alt="maxdev" />
+                <img className='logoMaxdev' src="logoMax.png" alt="maxdev" />
             </div>
         </div>
     );
