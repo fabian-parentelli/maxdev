@@ -31,7 +31,7 @@ const Nav = () => {
                {data.nav.itemC && <a href='#us' onClick={toggleMenu}>{data.nav.itemC}</a>}
                {data.nav.itemD && <a href='#form' onClick={toggleMenu}>{data.nav.itemD}</a>}
             </div>
-            <img className='menu' onClick={toggleMenu} src="src/assets/menu.png" alt="menu" />
+            <img className='menu' onClick={toggleMenu} src="menu.png" alt="menu" />
         </div>
     );
 };
