@@ -1,0 +1,42 @@
+.compC {
+    width: 100%;
+    height: 120vh;
+    background-image: url('../../../../public/background.jpg');
+    background-size: cover;
+    padding: 2rem;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .compCOut {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .compCInt {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .imgCompC {
+            width: 500px;
+            margin-top: 6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .imgCompC {
+        display: none;
+    }
+
+    .compCInt {
+        width: 100% !important;
+    }
+}

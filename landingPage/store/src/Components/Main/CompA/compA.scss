@@ -1,0 +1,56 @@
+@import '../../../app.scss';
+
+.compA {
+    background-image: url('../../../../public/compA.jpg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .compP {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 3rem;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .compA {
+        padding: 6px;
+
+        img {
+            width: 200px;
+        }
+
+        .compP {
+            width: 100%;
+            gap: 6px;
+
+            h2 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .compA {
+        flex-direction: column;
+        img {
+            width: 100px;
+        }
+
+        .compP {
+            text-align: center;
+        }
+    }
+}

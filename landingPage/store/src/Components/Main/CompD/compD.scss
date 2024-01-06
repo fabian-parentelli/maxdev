@@ -1,0 +1,51 @@
+@import '../../../app.scss';
+
+.compD {
+    background-image: url('../../../../public/background.jpg');
+    width: 100%;
+    height: auto;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    .sliderComp {
+        background-color: $colorC;
+        padding: 1rem 0;
+    }
+
+    .imgCarousel {
+        width: 80%;
+        height: 200px;
+        object-fit: contain;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .sliderComp {
+        height: 45%;
+        padding: 0 !important;
+    }
+
+    .compD {
+
+        h2 {
+            padding: 2rem 0;
+        }
+    }
+
+
+    .imgCarousel {
+        width: 100% !important;
+        height: 100px !important;
+        margin-left: 0 !important;
+    }
+
+    .compCInt p {
+        font-size: 14px;
+    }
+}
