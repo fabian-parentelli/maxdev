@@ -1,0 +1,71 @@
+@import '../../../app.scss';
+
+.us {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    .usText {
+        width: 100%;
+        margin-left: 10%;
+
+        h3 {
+            color: $colorA;
+            font-size: 2rem;
+        }
+
+        h2 {
+            color: $colorB;
+            font-size: 4rem;
+        }
+
+        p {
+            width: 60%;
+        }
+    }
+
+    img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .us {
+        width: 90%;
+        background-image: url('../../../../public/us.png');
+        background-size: cover;
+        background-position: right;
+        padding: 1rem;
+        overflow: hidden;
+        background-attachment: fixed;
+
+        .usText {
+            width: 100%;
+            margin: 0;
+    
+            h3 {
+                font-size: 1rem;
+            }
+    
+            h2 {
+                font-size: 3rem;
+            }
+    
+            p {
+                width: 100%;
+                background-color: $colorG;
+                padding: 6px;
+                border-radius: 6px;
+                box-shadow: -1px 5px 20px;
+            }
+        }
+    
+        img {
+            display: none;
+        }
+    }
+}

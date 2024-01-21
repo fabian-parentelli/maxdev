@@ -1,0 +1,27 @@
+@import '../../../App.scss'; 
+
+.mainB {
+    color: $colorF;
+    width: 100%;
+    padding: 2rem;
+    min-height: 100vh;
+
+    h2 {
+        text-align: center;
+        margin: 1rem 0 3rem 0;
+    }
+
+    .mainB-Service {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .imgService {
+            width: 280px;
+            border-radius: 12px;
+        }
+    }
+}

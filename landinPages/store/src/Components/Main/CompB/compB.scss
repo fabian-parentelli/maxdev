@@ -1,0 +1,46 @@
+@import '../../../app.scss';
+
+.compB {
+    width: 100%;
+    height: auto;
+
+    .separator {
+        width: 100%;
+        height: 150px;
+        background-color: $colorF;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .divCompB {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .divInCompB {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 914px) {
+
+    .separator {
+        height: 100px;
+    }
+
+    .divCompB {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,79 @@
+@import '../../../app.scss';
+
+.us {
+    background-image: url('../../../../public/usBack.png');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .usText {
+        margin-left: 5%;
+
+        p {
+            margin-top: 2rem;
+        }
+    }
+
+    img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .us {
+        align-items: flex-start;
+
+        img {
+            width: 50%;
+            filter: blur(1px);
+        }
+    }
+
+    .usText {
+
+        h2 {
+            margin-top: 1rem;
+        }
+
+        .usUp {
+            position: absolute;
+            font-size: 12px;
+            top: 10%;
+            font-weight: 600;
+            background-color: rgba(0, 0, 0, 0.308);
+            z-index: 2;
+            padding: 1rem;
+        }
+
+        .usDw {
+            position: absolute;
+            font-size: 12px;
+            bottom: 10%;
+            font-weight: 600;
+            background-color: rgba(0, 0, 0, 0.308);
+            z-index: 2;
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .us {
+        .usText {
+
+            .usUp {
+                padding: 0;
+            }
+
+            .usDw {
+                padding: 0;
+            }
+        }
+    }
+
+}

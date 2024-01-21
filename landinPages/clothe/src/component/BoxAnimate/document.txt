@@ -1,0 +1,15 @@
+*** Init ***
+    Posición desde donde viene la animación
+        x: Eje dereecha o Izquierda
+        y: Eje arriba abajo
+           
+init={{ x: "100vw", y: "100vh" }}
+
+
+<BoxAnimate
+    init={{ x: "40vw", opacity: 0 }}
+    anim={{ x: 0, opacity: 1 }}
+    tran={{ type: "spring", stiffness: 80, damping: 80, dealay: 3, opacity: { duration: 2 } }}
+>
+    <h2>Hola Mundo!!!</h2>
+</BoxAnimate>

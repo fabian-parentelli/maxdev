@@ -1,0 +1,218 @@
+@import '../../app.scss';
+
+.footerFather {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .maxdev {
+        background-color: #111111;
+        padding: 6px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logoMaxdev {
+            width: 30px;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: $colorC;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .footUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 300px;
+        height: 100%;
+
+        .footName {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                width: 40px;
+            }
+
+            h2 {
+                color: $colorA;
+            }
+        }
+
+        p {
+            color: $colorB;
+            width: 100%;
+        }
+
+        .sosiclMedia {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+
+            .facebook {
+                background-image: url('../../assets/facebook.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/facebook1.png');
+                }
+            }
+
+            .x {
+                background-image: url('../../assets/x.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/x1.png');
+                }
+            }
+
+            .instagrame {
+                background-image: url('../../assets/instagrame.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/instagrame1.png');
+                }
+            }
+
+            .pinterest {
+                background-image: url('../../assets/pinteres.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/pinteres1.png');
+                }
+            }
+
+            .linkedin {
+                background-image: url('../../assets/linkedin.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/linkedin1.png');
+                }
+            }
+
+            .tikTok {
+                background-image: url('../../assets/tikTok.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/tikTok1.png');
+                }
+            }
+        }
+    }
+
+    .footSeccion {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3px;
+
+        h3 {
+            color: $colorB;
+        }
+
+        .line {
+            width: 50%;
+            height: 1px;
+            background-color: $colorB;
+        }
+
+        a {
+            color: $colorB;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+
+            &:hover {
+                background-color: $colorD;
+            }
+        }
+    }
+
+    .footCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+
+        .foorData {
+            color: $colorB;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        p {
+            color: $colorB;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+
+        .footUs {
+            p {
+                width: 90%;
+            }
+        }
+    }
+}

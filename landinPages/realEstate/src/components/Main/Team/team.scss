@@ -1,0 +1,105 @@
+@import '../../../app.scss';
+
+.team {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .teamUp {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+
+        .teamUpLeft {
+            width: 100px;
+            margin-left: 1rem;
+
+            .teamBrownLeft {
+                width: 60px;
+                height: 60px;
+                background-color: $colorA;
+            }
+
+            .teamGrayLeft {
+                width: 40px;
+                height: 40px;
+                background-color: $colorB;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .teamUpRight {
+            width: 100px;
+
+            .teamBrownRight {
+                width: 60px;
+                height: 60px;
+                background-color: $colorA;
+                margin-left: 1.4rem;
+            }
+
+            .teamGrayRight {
+                width: 40px;
+                height: 40px;
+                background-color: $colorB;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .teamTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            color: $colorA;
+            font-size: 4rem;
+        }
+    }
+
+    .teamCards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+
+        .teamCard {
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                width: 80%;
+                height: 70%;
+                object-fit: cover;
+                padding: 1rem;
+                background-color: $colorD;
+            }
+
+            div {
+                text-align: center;
+                margin-bottom: 10%;
+                h4 {
+                    color: $colorA;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

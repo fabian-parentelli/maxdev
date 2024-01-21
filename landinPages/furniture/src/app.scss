@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  font-family: 'Alata', sans-serif;
+}
+
+$colorA: #966A54;
+$colorB: #1A5B6B;
+$colorC: #EFEDED;
+$colorD: #948b7e65;
+$colorE: #1A342B;
+$colorF: #1a5b6b54;
+$colorG: #EBEBEB;
+
+body {
+  background-color: $colorC;
+}
+
+html {
+  scroll-behavior: smooth;
+}

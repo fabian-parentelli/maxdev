@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.nav {
+    padding: 2rem 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    position: fixed;
+    z-index: 1;
+    transition: .3s ease-in;
+
+    .navA {
+        text-decoration: none;
+        color: $colorF;
+        transition: .3s ease-in-out;
+        &:hover {
+            color: gray;
+        }
+    }
+}
+
+.transparent {
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.colorVew {
+    background-color: $colorG;
+}
+
+@media screen and (max-width: 426px) {
+    .nav {
+        padding: 6px;
+        justify-content: center;
+    }
+}

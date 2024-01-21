@@ -1,0 +1,225 @@
+@import '../../app.scss';
+
+.footerFather {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .maxdev {
+        background-color: #111111;
+        padding: 6px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logoMaxdev {
+            width: 30px;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: $colorB;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .footUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 300px;
+        height: 100%;
+
+        .footName {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                width: 40px;
+            }
+
+            h2 {
+                font-weight: 600;
+                color: $colorC;
+            }
+        }
+
+        p {
+            color: $colorC;
+            width: 100%;
+        }
+
+        .sosiclMedia {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+
+            .facebook {
+                background-image: url('../../assets/facebook.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/facebook1.png');
+                }
+            }
+
+            .x {
+                background-image: url('../../assets/x.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/x1.png');
+                }
+            }
+
+            .instagrame {
+                background-image: url('../../assets/instagrame.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/instagrame1.png');
+                }
+            }
+
+            .pinterest {
+                background-image: url('../../assets/pinteres.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/pinteres1.png');
+                }
+            }
+
+            .linkedin {
+                background-image: url('../../assets/linkedin.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/linkedin1.png');
+                }
+            }
+
+            .tikTok {
+                background-image: url('../../assets/tikTok.png');
+                background-size: contain;
+                width: 25px;
+                height: 25px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-image: url('../../assets/tikTok1.png');
+                }
+            }
+        }
+    }
+
+    .footSeccion {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3px;
+
+        h3 {
+            color: $colorC;
+        }
+
+        .line {
+            width: 50%;
+            height: 1px;
+            background-color: $colorC;
+        }
+
+        a {
+            color: $colorC;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+            padding: 1rem 0;
+
+            &:hover {
+                background-color: $colorA;
+            }
+        }
+    }
+
+    .footCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        margin-bottom: 2rem;
+
+        .foorData {
+            color: $colorB;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        p {
+            color: $colorC;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        padding: 0;
+
+        .footUs {
+
+            p {
+                width: 98%;
+                margin: 0 auto;
+                margin: 12px 0;
+            }
+        }
+    }
+}

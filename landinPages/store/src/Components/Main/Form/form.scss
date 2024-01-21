@@ -1,0 +1,87 @@
+@import '../../../app.scss';
+
+.form {
+    width: 100%;
+    height: auto;
+    background-image: url('../../../../public/background.jpg'); 
+    padding: 2rem;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .formVew {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        .imgForm {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 2px 4px 8px;
+        }
+
+        .formContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            border: solid 2px $colorD;
+            border-radius: 12px;
+            padding: 1rem;
+            background-color: $colorC;
+            width: 35%;
+
+            .formSection {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    border-radius: 6px;
+                    border: solid 2px $colorC;
+                    height: 30px;
+                    padding: 12px;
+                }
+
+                textarea {
+                    border-radius: 6px;
+                    border: solid 2px $colorC;
+                    padding: 12px;
+                    resize: none;
+                }
+            }
+
+            .btnForm {
+                width: 60px;
+                height: 30px;
+                width: 60%;
+                border-radius: 6px;
+                border: solid 2px $colorC;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    background-color: $colorD;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .formVew {
+        flex-direction: column;
+        padding: 10%;
+        
+        .imgForm {
+            display: none;
+        }
+    }
+
+    .formContainer {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,89 @@
+@import '../../../app.scss';
+
+.coleccion {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+
+    .col1 {
+        width: 200px;
+        box-shadow: 4px 5px 20px 1px;
+    }
+
+    .divCol1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+
+        .col2 {
+            width: 400px;
+        }
+
+        .col3 {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .col4 {
+        position: absolute;
+        bottom: 10%;
+        right: 35%;
+        width: 300px;
+        box-shadow: 5px 5px 15px 1px; 
+    }
+
+    .divCol2 {
+        width: 30%;
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-weight: 600;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .coleccion {
+        flex-direction: column;
+        align-items: center;
+
+        .col1 {
+            width: 200px;
+        }
+    
+        .col4 {
+            position: static;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divCol1 {
+
+            .col2 {
+                width: 100%;
+            }
+            align-items: center;
+        }
+    
+        .divCol2 {
+            width: 100%;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}

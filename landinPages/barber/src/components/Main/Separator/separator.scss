@@ -1,0 +1,20 @@
+@import '../../../App.scss';
+
+.separator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorB;
+    padding: 2rem;
+
+    .imgSeparator {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .separator .imgSeparator {
+        width: 60%;
+    }
+}

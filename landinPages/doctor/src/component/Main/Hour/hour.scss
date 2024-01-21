@@ -1,0 +1,31 @@
+@import '../../../app.scss';
+
+.hour {
+    background-color: $colorC;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        font-size: 2rem;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $colorA;
+            transition: .3s;
+            &:hover {
+                color: $colorD;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hour {
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+}

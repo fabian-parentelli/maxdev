@@ -1,0 +1,23 @@
+@import '../../app.scss';
+
+.header {
+    width: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        position: absolute;
+        bottom: 50%;
+        left: 6%;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .header h1 {
+        font-size: 1rem;
+    }
+}

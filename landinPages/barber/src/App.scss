@@ -1,0 +1,23 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+$colorA: #373739;
+$colorB: #19191a;
+$colorC: #020202;
+$colorD: #F13223;
+$colorE: #ecdda2;
+$colorF: #ffffff;
+$colorG: #373739a6;
+
+body {
+  background-color: $colorC;
+  font-family: 'Exo 2', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

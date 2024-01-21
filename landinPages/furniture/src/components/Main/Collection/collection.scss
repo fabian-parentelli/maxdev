@@ -1,0 +1,109 @@
+@import '../../../app.scss';
+
+.collection {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../../public/collection.jpg');
+    background-size: cover;
+    overflow: hidden;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 2rem;
+        color: $colorB;
+    }
+
+    .containerCards {
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        row-gap: 2rem;
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+        
+            .face {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s;
+        
+                h3 {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    text-align: center;
+                    top: 70px;
+                    color: white;
+                    font-size: 1.6rem;
+                }
+        
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    filter: brightness(0.4);
+                }
+            }
+        
+            .front {
+                transform: perspective(600p) rotateY(0deg);
+                box-shadow: 0 5px 10px $colorB;
+            }
+        
+            .back {
+                transform: perspective(600px) rotateY(180deg);
+                background-color: $colorC;
+                padding: 15px;
+                color: $colorB;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: center;
+                box-shadow: 0 5px 10px $colorB;
+        
+                p {
+                    font-weight: 500;
+                }
+        
+                .separador {
+                    border-top: solid 1px $colorB;
+                    height: 50px;
+                    line-height: 50px;
+                }
+        
+                a {
+                    font-weight: $colorB;
+                    color: $colorA;
+                    text-decoration: none;
+                    transition: .3s;
+                    &:hover {
+                        color: $colorE;
+                    }
+                }
+            }
+            &:hover .front {
+                transform:  perspective(600px) rotateY(180deg);
+            }
+            &:hover .back {
+                transform:  perspective(600px) rotateY(360deg);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collection {
+        background-position: left;
+    }
+}

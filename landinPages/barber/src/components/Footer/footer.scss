@@ -1,0 +1,141 @@
+@import '../../App.scss';
+
+.footer {
+    background-color: $colorB;
+    width: 100%;
+    padding-top: 4rem;
+
+    .footUp {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .footLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 2rem;
+
+            .footName {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                .imgFoot {
+                    width: 60px;
+                }
+
+                h4 {
+                    color: #ccc;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .footSocials {
+                margin-top: 1rem;
+                min-height: 60px;
+                border: solid 2px $colorF;
+                border-radius: 6px;
+                padding: 12px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .facebook {
+                    background-image: url('../../assets/face1.png');
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        background-image: url('../../assets/face2.png');
+                    }
+                }
+
+                .instagrame {
+                    background-image: url('../../assets/insta1.png');
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        background-image: url('../../assets/insta2.png');
+                    }
+                }
+
+                .tiktok {
+                    background-image: url('../../assets/tik1.png');
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        background-image: url('../../assets/tik2.png');
+                    }
+                }
+
+                .linkedin {
+                    background-image: url('../../assets/lin1.png');
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        background-image: url('../../assets/lin2.png');
+                    }
+                }
+            }
+        }
+
+        .map {
+            border-radius: 6px;
+        }
+
+        .footerRight {
+            width: 30%;
+            color: $colorF;
+        }
+    }
+
+    .maxdev {
+        background-color: #111111;
+        margin-top: 3rem;
+        padding: 6px;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logoMaxdev {
+            width: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .footer {
+        padding-top: 0;
+        .footUp {
+            padding-top: 2rem;
+            flex-direction: column;
+            gap: 2rem;
+
+            .footerRight {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    }
+}

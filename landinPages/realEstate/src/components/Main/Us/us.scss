@@ -1,0 +1,143 @@
+@import '../../../app.scss';
+
+.us {
+    width: 100%;
+    height: 100vh;
+    background-color: $colorA;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    color: $colorC;
+
+    .usLeft {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 6%;
+
+        .usTextAndLine {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .usLine {
+                width: 300px;
+                height: 1px;
+                background-color: $colorC;
+                transition: 3s ease 0.5s;
+            }
+        }
+
+        .usUs {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .usEmail {
+            margin-bottom: 5%;
+        }
+    }
+
+    .usRight {
+        height: 50%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        .usImgBack {
+            width: 70%;
+        }
+
+        .usimgFront {
+            position: absolute;
+            width: 450px;
+            right: 25%;
+            bottom: 5%;
+            box-shadow: 5px 1px 15px 1px black;
+            background-color: $colorC;
+            padding: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1076px) {
+    .us {
+        .usLeft {
+            width: 60%;
+
+            .usTextAndLine {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .usUs {
+                width: 100%;
+            }
+        }
+
+        .usRight {
+            height: 40%;
+    
+            .usImgBack {
+                width: 100%;
+            }
+
+            .usimgFront {
+                width: 150px;
+                right: 1%;
+                bottom: 0;
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .us {
+        background-image: linear-gradient(rgba(34, 32, 32, 0.829), rgba(0, 0, 0, 0.288)), url('../../../../public/usBack.jpg');
+        .usLeft {
+            width: 100%;
+
+            .usTextAndLine {
+                flex-direction: column;
+                margin: 0 auto;
+                gap: 1rem;
+            }
+
+            .usUs {
+                width: 100%;
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .usRight {
+            width: 0;
+            .usImgBack {
+                display: none;
+            }
+            .usimgFront {
+                bottom: 2%;
+            }
+        }
+    }
+}
